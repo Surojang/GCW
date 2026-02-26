@@ -23,7 +23,7 @@ const LETTER_CONTENT = [
   "  어쩌면 사이가 멀어지는 일이 있을 일이 생길지도 모르지",
   "  하지만 그래도 항상 어디에선가 너를 응원하고 있을께\n\n\n",
   "  너는 진짜 최고의 친구고 좋은 사람이야",
-  "  졸업 진심으로 축하해 ♡\n\n"
+  "  좀 오글거렸겠지만 ㅋㅋ 졸업 진심으로 축하해 ♡\n\n"
 ];
 
 const FINAL_MESSAGE = "  나는 졸업생 전예담 헤헿. 나의 예담밸리를 탐색해볼까?";
@@ -54,8 +54,12 @@ export default function App() {
       : FINAL_MESSAGE;
 
   // Placeholder portraits
-  const defaultPortrait = "/dev_charac.png";
-  const friendPortrait = "/doggy2.png";
+  // App.tsx 상단 혹은 경로 정의 부분 수정
+  const base = import.meta.env.BASE_URL; // 현재 설정된 base 경로('/GCW/')를 가져옵니다.
+
+  // 경로 앞에 base를 붙여줍니다.
+  const defaultPortrait = `${base}dev_charac.png`;
+  const friendPortrait = `${base}doggy2.png`;
   const currentPortrait = dialogueIndex < LETTER_CONTENT.length ? defaultPortrait : friendPortrait;
 
   return (
