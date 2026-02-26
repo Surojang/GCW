@@ -34,11 +34,11 @@ export default function InteractiveMap({ onOpenLetter, onOpenGreenhouse, onOpenB
       <div 
         style={{ 
           backgroundImage: `url(${MainScreen})`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
-        className="relative w-full max-w-5xl aspect-video md:aspect-auto md:h-[80vh] border-8 border-[#8b4513] rounded-xl shadow-2xl overflow-hidden"
+        className="relative w-full max-w-5xl aspect-video md:aspect-auto md:h-[80vh] border-8 border-[#8b4513] bg-[#000000] rounded-xl shadow-2xl overflow-hidden"
       >
         
         {/* House (가정집) */}
