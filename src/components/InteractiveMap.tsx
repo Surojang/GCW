@@ -34,7 +34,7 @@ export default function InteractiveMap({ onOpenLetter, onOpenGreenhouse, onOpenB
       <div 
         style={{ 
           backgroundImage: `url(${MainScreen})`,
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
